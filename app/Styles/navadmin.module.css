@@ -1,0 +1,44 @@
+/* Styles/nav-admin.module.css */
+
+.navbar {
+  font-size: 18px;
+  background-color: #0c4a6e; /* Tailwind's bg-blue-950 */
+  display: flex;
+  height: 90px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.logo {
+  color: #44e8c7; /* Tailwind's text-teal-200 */
+  font-weight: bold;
+  font-size: 20px;
+    font-family:  Arial, Helvetica, sans-serif;
+
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 100px;
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+.navList li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,98 @@
+.cardcontainer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.blogCard {
+  position: relative;
+  height: 300px;
+  width: 1050px;
+  padding: 2px;
+  box-shadow: 0 4px 8px 0 rgba(12, 0, 0, 0.2), 0 6px 20px 0 rgba(14, 0, 0, 0.19);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.cardImg {
+  width: 420px;
+  height: 256px;
+  border-radius: 10px;
+  /* margin-right: 200px; */
+}
+.cardImg Image {
+  border-radius: 16px;
+}
+.cardText {
+  background-color: transparent;
+  height: 256px;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  color: #000000;
+}
+
+.cardText h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.cardText p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #444444;
+  line-height: 1.6;
+}.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.editbtn {
+  color: white;
+  background-color: #0077b5; /* LinkedIn Blue */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editbtn:hover {
+  background-color: #005f8f;
+}
+
+.deletebtn {
+  color: white;
+  background-color: #e60023; 
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deletebtn:hover {
+  background-color: #b0001b;
+}
