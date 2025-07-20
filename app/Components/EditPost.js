@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Styles from "../Styles/newpost.module.css";
 
-const editblog = () => {
+const EditBlog = () => {
   useEffect(() => {
     if (!window.cloudinary) {
       const script = document.createElement("script");
@@ -12,6 +12,7 @@ const editblog = () => {
       document.body.appendChild(script);
     }
   }, []);
+
   const { id } = useParams();
   const [blog, setBlog] = useState({
     title: "",
@@ -31,7 +32,7 @@ const editblog = () => {
         console.error(error.message);
       }
     };
-    fetchBlog();
+    if (id) fetchBlog();
   }, [id]);
 
   const handleSubmit = async (e) => {
@@ -42,12 +43,12 @@ const editblog = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(blog),
       });
-      alert("done and dusted")
-
+      alert("done and dusted");
     } catch (error) {
       alert("error in updation");
     }
   };
+
   const handleImageUpload = () => {
     const widget = window.cloudinary.createUploadWidget(
       {
@@ -110,4 +111,4 @@ const editblog = () => {
   );
 };
 
-export default editblog;
+export default EditBlog;

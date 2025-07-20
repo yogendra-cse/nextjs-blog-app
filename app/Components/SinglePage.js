@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Styles from "../Styles/singlepage.module.css";
+import Image from "next/image";
+
 
 const SinglePage = () => {
     const { id } = useParams();
@@ -28,9 +30,12 @@ const SinglePage = () => {
         <div className={Styles["blog-container"]}>
             <div className={Styles["blog-card"]}>
                 <h1 className={Styles["blog-title"]}>{blog.title}</h1>
-                <img
+
+                <Image
                     src={blog.image}
                     alt="Blog Cover"
+                    width={800}
+                    height={400}
                     className={Styles["blog-image"]}
                 />
                 <p className={Styles["blog-summary"]}>{blog.summary}</p>
